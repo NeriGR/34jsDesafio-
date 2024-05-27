@@ -5,10 +5,11 @@ $font-family-base:'Helvetica';
 $badge-font-weight: 300;
 $badge-color: #495057;
 
-$theme-colors: map-merge($theme-colors, ("primary": rgba(59, 73, 223),
-        "secondary": green,
+$theme-colors: () !default;
+$theme-colors: map-merge($theme-colors, ("morado": rgba(59, 73, 223),
         "dark-morado": rgba(47, 58, 178),
-        "danger": rgba(47, 58, 178),
+        "dark-grey": $gray-700,
+
     ));
 
 
@@ -23,15 +24,6 @@ $theme-colors: map-merge($theme-colors, ("primary": rgba(59, 73, 223),
     box-sizing: border-box;
 }
 
-.card-links {
-    color: $gray-700;
-    text-decoration: none;
-}
-
-.card-links:hover {
-    color: $danger;
-
-}
 
 /*.no-border {
         border: none !important;
