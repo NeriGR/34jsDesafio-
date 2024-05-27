@@ -1,20 +1,20 @@
-$font-family-base:'Helvetica';
-$badge-font-weight: $font-weight-light;
-
-$theme-colors: ("primary": rgba(59,73,223),
-    "secondary": rgba(47,58,178),
-    "light": hsl(225, 100%, 98%),
-    /*annual plan*/
-    "dark": #3d3d3d
-    /*headings*/
-    "info": rgba(71,71,71),
-    /*text*/
-);
-
-
 @import "bootstrap/functions";
 @import "bootstrap/variables";
+
+$font-family-base:'Helvetica';
+$badge-font-weight: 300;
+$badge-color: #495057;
+
+$theme-colors: map-merge($theme-colors, ("primary": rgba(59, 73, 223),
+        "secondary": green,
+        "dark-morado": rgba(47, 58, 178),
+        "danger": rgba(47, 58, 178),
+    ));
+
+
+@import "bootstrap/mixins";
 @import "bootstrap/bootstrap.scss";
+
 
 
 * {
@@ -22,3 +22,28 @@ $theme-colors: ("primary": rgba(59,73,223),
     padding: 0;
     box-sizing: border-box;
 }
+
+.card-links {
+    color: $gray-700;
+    text-decoration: none;
+}
+
+.card-links:hover {
+    color: $danger;
+
+}
+
+/*.no-border {
+        border: none !important;
+      }
+      .margen-left {
+        margin-left: 39px;
+      }
+      .btn-hover-fill {
+        transition: background-color 0.3s ease, color 0.3s ease;
+      }
+
+      .btn-hover-fill:hover {
+        background-color: #333; Color de fondo al hacer hover 
+        color: #fff; Color del texto al hacer hover
+      }*/
