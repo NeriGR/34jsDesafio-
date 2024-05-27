@@ -1,3 +1,22 @@
+$font-family-base:'Helvetica';
+$badge-font-weight: $font-weight-light;
+
+$theme-colors: ("primary": rgba(59,73,223),
+    "secondary": rgba(47,58,178),
+    "light": hsl(225, 100%, 98%),
+    /*annual plan*/
+    "dark": #3d3d3d
+    /*headings*/
+    "info": rgba(71,71,71),
+    /*text*/
+);
+
+
+@import "bootstrap/functions";
+@import "bootstrap/variables";
+@import "bootstrap/bootstrap.scss";
+
+
 * {
     margin: 0;
     padding: 0;
