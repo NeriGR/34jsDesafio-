@@ -39,6 +39,7 @@
   --bs-dark: #212529;
   --bs-morado: rgb(59, 73, 223);
   --bs-dark-morado: rgb(47, 58, 178);
+  --bs-ghost-morado: rgba(59, 73, 223, 0.1);
   --bs-dark-grey: #495057;
   --bs-light-grey: #f8f9fa;
   --bs-primary-rgb: 13, 110, 253;
@@ -51,6 +52,7 @@
   --bs-dark-rgb: 33, 37, 41;
   --bs-morado-rgb: 59, 73, 223;
   --bs-dark-morado-rgb: 47, 58, 178;
+  --bs-ghost-morado-rgb: 59, 73, 223;
   --bs-dark-grey-rgb: 73, 80, 87;
   --bs-light-grey-rgb: 248, 249, 250;
   --bs-primary-text-emphasis: #052c65;
@@ -3487,6 +3489,23 @@ textarea.form-control-lg {
   --bs-btn-disabled-border-color: rgb(47, 58, 178);
 }
 
+.btn-ghost-morado {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: rgba(59, 73, 223, 0.1);
+  --bs-btn-border-color: rgba(59, 73, 223, 0.1);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: rgba(14, 17, 51, 0.235);
+  --bs-btn-hover-border-color: rgba(10, 13, 39, 0.28);
+  --bs-btn-focus-shadow-rgb: 210, 213, 248;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: rgba(10, 13, 39, 0.28);
+  --bs-btn-active-border-color: rgba(8, 10, 30, 0.325);
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: rgba(59, 73, 223, 0.1);
+  --bs-btn-disabled-border-color: rgba(59, 73, 223, 0.1);
+}
+
 .btn-dark-grey {
   --bs-btn-color: #fff;
   --bs-btn-bg: #495057;
@@ -3688,6 +3707,23 @@ textarea.form-control-lg {
   --bs-btn-disabled-color: rgb(47, 58, 178);
   --bs-btn-disabled-bg: transparent;
   --bs-btn-disabled-border-color: rgb(47, 58, 178);
+  --bs-gradient: none;
+}
+
+.btn-outline-ghost-morado {
+  --bs-btn-color: rgba(59, 73, 223, 0.1);
+  --bs-btn-border-color: rgba(59, 73, 223, 0.1);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: rgba(59, 73, 223, 0.1);
+  --bs-btn-hover-border-color: rgba(59, 73, 223, 0.1);
+  --bs-btn-focus-shadow-rgb: 59, 73, 223;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: rgba(59, 73, 223, 0.1);
+  --bs-btn-active-border-color: rgba(59, 73, 223, 0.1);
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: rgba(59, 73, 223, 0.1);
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: rgba(59, 73, 223, 0.1);
   --bs-gradient: none;
 }
 
@@ -5364,6 +5400,13 @@ textarea.form-control-lg {
   --bs-alert-link-color: var(--bs-dark-morado-text-emphasis);
 }
 
+.alert-ghost-morado {
+  --bs-alert-color: var(--bs-ghost-morado-text-emphasis);
+  --bs-alert-bg: var(--bs-ghost-morado-bg-subtle);
+  --bs-alert-border-color: var(--bs-ghost-morado-border-subtle);
+  --bs-alert-link-color: var(--bs-ghost-morado-text-emphasis);
+}
+
 .alert-dark-grey {
   --bs-alert-color: var(--bs-dark-grey-text-emphasis);
   --bs-alert-bg: var(--bs-dark-grey-bg-subtle);
@@ -5807,6 +5850,19 @@ textarea.form-control-lg {
   --bs-list-group-active-color: var(--bs-dark-morado-bg-subtle);
   --bs-list-group-active-bg: var(--bs-dark-morado-text-emphasis);
   --bs-list-group-active-border-color: var(--bs-dark-morado-text-emphasis);
+}
+
+.list-group-item-ghost-morado {
+  --bs-list-group-color: var(--bs-ghost-morado-text-emphasis);
+  --bs-list-group-bg: var(--bs-ghost-morado-bg-subtle);
+  --bs-list-group-border-color: var(--bs-ghost-morado-border-subtle);
+  --bs-list-group-action-hover-color: var(--bs-emphasis-color);
+  --bs-list-group-action-hover-bg: var(--bs-ghost-morado-border-subtle);
+  --bs-list-group-action-active-color: var(--bs-emphasis-color);
+  --bs-list-group-action-active-bg: var(--bs-ghost-morado-border-subtle);
+  --bs-list-group-active-color: var(--bs-ghost-morado-bg-subtle);
+  --bs-list-group-active-bg: var(--bs-ghost-morado-text-emphasis);
+  --bs-list-group-active-border-color: var(--bs-ghost-morado-text-emphasis);
 }
 
 .list-group-item-dark-grey {
@@ -7369,6 +7425,11 @@ textarea.form-control-lg {
   background-color: RGBA(var(--bs-dark-morado-rgb), var(--bs-bg-opacity, 1)) !important;
 }
 
+.text-bg-ghost-morado {
+  color: #fff !important;
+  background-color: RGBA(var(--bs-ghost-morado-rgb), var(--bs-bg-opacity, 1)) !important;
+}
+
 .text-bg-dark-grey {
   color: #fff !important;
   background-color: RGBA(var(--bs-dark-grey-rgb), var(--bs-bg-opacity, 1)) !important;
@@ -7467,6 +7528,15 @@ textarea.form-control-lg {
 .link-dark-morado:hover, .link-dark-morado:focus {
   color: RGBA(38, 46, 142, var(--bs-link-opacity, 1)) !important;
   text-decoration-color: RGBA(38, 46, 142, var(--bs-link-underline-opacity, 1)) !important;
+}
+
+.link-ghost-morado {
+  color: RGBA(var(--bs-ghost-morado-rgb), var(--bs-link-opacity, 1)) !important;
+  text-decoration-color: RGBA(var(--bs-ghost-morado-rgb), var(--bs-link-underline-opacity, 1)) !important;
+}
+.link-ghost-morado:hover, .link-ghost-morado:focus {
+  color: RGBA(10, 13, 39, var(--bs-link-opacity, 1)) !important;
+  text-decoration-color: RGBA(10, 13, 39, var(--bs-link-underline-opacity, 1)) !important;
 }
 
 .link-dark-grey {
@@ -7931,6 +8001,10 @@ textarea.form-control-lg {
   --bs-focus-ring-color: rgba(var(--bs-dark-morado-rgb), var(--bs-focus-ring-opacity));
 }
 
+.focus-ring-ghost-morado {
+  --bs-focus-ring-color: rgba(var(--bs-ghost-morado-rgb), var(--bs-focus-ring-opacity));
+}
+
 .focus-ring-dark-grey {
   --bs-focus-ring-color: rgba(var(--bs-dark-grey-rgb), var(--bs-focus-ring-opacity));
 }
@@ -8107,6 +8181,11 @@ textarea.form-control-lg {
 .border-dark-morado {
   --bs-border-opacity: 1;
   border-color: rgba(var(--bs-dark-morado-rgb), var(--bs-border-opacity)) !important;
+}
+
+.border-ghost-morado {
+  --bs-border-opacity: 1;
+  border-color: rgba(var(--bs-ghost-morado-rgb), var(--bs-border-opacity)) !important;
 }
 
 .border-dark-grey {
@@ -9524,6 +9603,11 @@ textarea.form-control-lg {
   color: rgba(var(--bs-dark-morado-rgb), var(--bs-text-opacity)) !important;
 }
 
+.text-ghost-morado {
+  --bs-text-opacity: 1;
+  color: rgba(var(--bs-ghost-morado-rgb), var(--bs-text-opacity)) !important;
+}
+
 .text-dark-grey {
   --bs-text-opacity: 1;
   color: rgba(var(--bs-dark-grey-rgb), var(--bs-text-opacity)) !important;
@@ -9746,6 +9830,11 @@ textarea.form-control-lg {
   text-decoration-color: rgba(var(--bs-dark-morado-rgb), var(--bs-link-underline-opacity)) !important;
 }
 
+.link-underline-ghost-morado {
+  --bs-link-underline-opacity: 1;
+  text-decoration-color: rgba(var(--bs-ghost-morado-rgb), var(--bs-link-underline-opacity)) !important;
+}
+
 .link-underline-dark-grey {
   --bs-link-underline-opacity: 1;
   text-decoration-color: rgba(var(--bs-dark-grey-rgb), var(--bs-link-underline-opacity)) !important;
@@ -9857,6 +9946,11 @@ textarea.form-control-lg {
 .bg-dark-morado {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-dark-morado-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.bg-ghost-morado {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-ghost-morado-rgb), var(--bs-bg-opacity)) !important;
 }
 
 .bg-dark-grey {
@@ -14770,9 +14864,34 @@ textarea.form-control-lg {
   text-decoration: none !important;
 }
 
-.link-dark-morado:hover, .link-dark-morado:focus {
+.link-dark-morado:hover,
+.link-dark-morado:focus {
   color: RGBA(38, 46, 142, var(--bs-link-opacity, 1)) !important;
   text-decoration: none;
+}
+
+.btn-ghost-morado {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: rgba(59, 73, 223, 0.1);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: rgba(14, 17, 51, 0.235);
+  --bs-btn-hover-border-color: rgba(10, 13, 39, 0.28);
+  --bs-btn-focus-shadow-rgb: 210, 213, 248;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: rgba(10, 13, 39, 0.28);
+  --bs-btn-active-border-color: rgba(8, 10, 30, 0.325);
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: rgba(59, 73, 223, 0.1);
+  --bs-btn-disabled-border-color: rgba(59, 73, 223, 0.1);
+  border: 0;
+}
+
+.cajascroll {
+  width: 300px;
+  height: 180px;
+  border: 1px solid gray;
+  overflow: scroll;
 }
 
 /*.no-border {
@@ -14789,15 +14908,3 @@ textarea.form-control-lg {
         background-color: #333; Color de fondo al hacer hover 
         color: #fff; Color del texto al hacer hover
       }*//*# sourceMappingURL=styles.css.map */
-
-/*Area de trabajo Gerardo Cespedes*/
-.cajascroll{
-width: 300px;
-height: 180px;
-border: 1px solid gray;
-overflow: scroll;
-align-items:;
-  
-}
-
-/*Fin area de trabajo Gerardo Cespedes*/
