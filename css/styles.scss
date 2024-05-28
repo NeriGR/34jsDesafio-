@@ -7,10 +7,11 @@ $badge-color: #495057;
 
 $theme-colors: () !default;
 $theme-colors: map-merge($theme-colors, ("morado": rgba(59, 73, 223),
-        "dark-morado": rgba(47, 58, 178),
-        "dark-grey": $gray-700,
+    "dark-morado": rgba(47, 58, 178),
+    "dark-grey": $gray-700,
+    "light-grey": $gray-100,
 
-    ));
+  ));
 
 
 @import "bootstrap/mixins";
@@ -19,9 +20,9 @@ $theme-colors: map-merge($theme-colors, ("morado": rgba(59, 73, 223),
 
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 

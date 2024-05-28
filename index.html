@@ -12,35 +12,32 @@
     />
 <<<<<<< HEAD
     <link rel="stylesheet" href="css/styles.css" />
-  
-      
- 
   </head>
-  <body class="bg-body-secondary" class="bg-body-secondary">
+  <body class="bg-light-grey">
     <header class="bg-white m-0">
-      <nav class="navbar navbar-expand-lg bg-white flex-nowrap">
-      <div class="container-fuid w-100" >
-        <div class="flex-row d-flex justify-content-between">
-          <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          data-bs-toggle="offcanvas"
-          href="#navbarSupportedContent"
-          role="button"
+      <div class="container-fuid w-100">
+        <div
+          class="flex-row d-flex justify-content-start justify-content-md-between p-2"
         >
-          <span class="navbar-toggler-icon" height="40"></span>
-        </button>  
-          <div class= "d-flex p-3">
-            <img
-              src="https://dev-to-uploads.s3.amazonaws.com/uploads/logos/resized_logo_UQww2soKuUsjaOGNB38o.png"
-              alt=""
-              width="50"
-              height="40"
-            />
-          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            data-bs-toggle="offcanvas"
+            href="#navbarSupportedContent"
+            role="button"
+          >
+            <span class="navbar-toggler-icon" height="40"></span>
+          </button>
+          <img
+            src="https://dev-to-uploads.s3.amazonaws.com/uploads/logos/resized_logo_UQww2soKuUsjaOGNB38o.png"
+            alt=""
+            width="50"
+            height="40"
+          />
+
           <div class="border col-7 d-none d-md-block">
             <button class="btn btn-light bg-transparent">
               <svg class="" width="24" height="24">
@@ -56,7 +53,9 @@
             />
             Powered by Algolia
           </div>
-          <div class="col-4 d-flex justify-content-end align-items-center gap-3 p-3">
+          <div
+            class="col-4 d-flex justify-content-end align-items-center gap-3"
+          >
             <button class="d-block d-md-none bg-transparent btn btn-light">
               <svg class="" width="24" height="24">
                 <path
@@ -85,94 +84,79 @@
           </div>
         </div>
       </div>
-    </nav>
     </header>
 
     <!-- Fin Manuel-->
     <div class="container p-3">
       <div class="row">
-        <div class="d-none navegaciondevcommunity col-2">
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            data-bs-toggle="offcanvas"
-            href="#navbarSupportedContent"
-            role="button"
+        <div class="d-none col-2">
+          <!---->
+          <div
+            class="offcanvas offcanvas-start show"
+            data-bs-scroll="true"
+            data-bs-backdrop="false"
+            id="navbarSupportedContent"
+            tabindex="-1"
+            aria-labelledby="navbarSupportedContentLabel"
           >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-        <img
-          src="https://dev-to-uploads.s3.amazonaws.com/uploads/logos/resized_logo_UQww2soKuUsjaOGNB38o.png"
-          alt="Bootstrap"
-          width="50"
-          height="40"
-        />
-        
-        
-        
-        <div
-          class="offcanvas offcanvas-start"
-          data-bs-scroll="true"
-          data-bs-backdrop="false"
-          id="navbarSupportedContent"
-          tabindex="-1"
-          aria-labelledby="navbarSupportedContentLabel"
-        >
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="navbarSupportedContentLabel">
-              Dev Community
-            </h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="offcanvas"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="offcanvas-body list-group">
-            <ul>
-              <a href="#" class="list-group-item list-group-item-action">Home</a>
-              <a href="#" class="list-group-item list-group-item-action">Podcasts</a>
-              <a href="#" class="list-group-item list-group-item-action">Videos</a>
-              <a href="#" class="list-group-item list-group-item-action">Tags</a>
-              <a href="#" class="list-group-item list-group-item-action">DEV Help</a>
-              <a href="#" class="list-group-item list-group-item-action">Forem Shop</a>
-              <a href="#" class="list-group-item list-group-item-action">Advertise on DEV</a>
-              <a href="#" class="list-group-item list-group-item-action">DEV Challenges</a>
-              <a href="#" class="list-group-item list-group-item-action">DEV Showcase</a>
-              <a href="#" class="list-group-item list-group-item-action">About</a>
-              <a href="#" class="list-group-item list-group-item-action">Contact</a>
-              <a href="#" class="list-group-item list-group-item-action">Guides</a>
-              <a href="#" class="list-group-item list-group-item-action">Software comparisons</a>
-            </ul>
-          </div>
-        </div>
-
-
-
-          <div class="hamburguesa">
-            <div class="navegacionprincipal">
-              <ul></ul>
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="navbarSupportedContentLabel">
+                Dev Community
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
             </div>
-            <div class="other">
-              <ul></ul>
-            </div>
-            <div class="socialicons"></div>
-          </div>
-
-          <div class="mytags">
-            <div class="title"><h5>My tags</h5></div>
-            <div class="cajascroll">
-              <ul></ul>
+            <div class="offcanvas-body list-group">
+              <ul>
+                <a href="#" class="list-group-item list-group-item-action"
+                  >Home</a
+                >
+                <a href="#" class="list-group-item list-group-item-action"
+                  >Podcasts</a
+                >
+                <a href="#" class="list-group-item list-group-item-action"
+                  >Videos</a
+                >
+                <a href="#" class="list-group-item list-group-item-action"
+                  >Tags</a
+                >
+                <a href="#" class="list-group-item list-group-item-action"
+                  >DEV Help</a
+                >
+                <a href="#" class="list-group-item list-group-item-action"
+                  >Forem Shop</a
+                >
+                <a href="#" class="list-group-item list-group-item-action"
+                  >Advertise on DEV</a
+                >
+                <a href="#" class="list-group-item list-group-item-action"
+                  >DEV Challenges</a
+                >
+                <a href="#" class="list-group-item list-group-item-action"
+                  >DEV Showcase</a
+                >
+                <a href="#" class="list-group-item list-group-item-action"
+                  >About</a
+                >
+                <a href="#" class="list-group-item list-group-item-action"
+                  >Contact</a
+                >
+                <a href="#" class="list-group-item list-group-item-action"
+                  >Guides</a
+                >
+                <a href="#" class="list-group-item list-group-item-action"
+                  >Software comparisons</a
+                >
+              </ul>
             </div>
           </div>
         </div>
         <!-- Valeria -->
-        <div class="blog col-7">
+        <div class="blog col-12 col-md-7">
           <div class="navegacion">
             <button class="border-0">Relevant</button>
             <button class="border-0">Latest</button>
@@ -197,12 +181,14 @@
                   <a class="text-decoration-none text-dark fw-medium" href="">
                     Miguel
                   </a>
-                  <p class="fw-laigh">May 25 (12 hours ago)</p>
+                  <p class="fw-light fs-6">May 25 (12 hours ago)</p>
                 </div>
               </div>
-              <div class="hashtahgs margen-left d-flex flex-column">
+              <div class="ms-5 d-flex flex-column">
                 <h3 class="">
-                  <a class="text-decoration-none text-dark fw-bold link-dark-morado" href=""
+                  <a
+                    class="text-decoration-none text-dark fw-bold link-dark-morado"
+                    href=""
                     ><strong>Frontend resources! &#128640; </strong></a
                   >
                 </h3>
@@ -260,9 +246,7 @@
                       John
                     </a>
 
-                    <a
-                      class="text-decoration-none text-dark fw-laighter"
-                      href=""
+                    <a class="text-decoration-none text-dark fw-lighter" href=""
                       >4 hours ago</a
                     >
                   </div>
@@ -303,7 +287,9 @@
               </li>
               <li class="list-group-item border-light-subtle">
                 <h6>
-                  <a href="#" class="link-dark-morado">Best JavaScript One Liners that You Must Know</a>
+                  <a href="#" class="link-dark-morado"
+                    >Best JavaScript One Liners that You Must Know</a
+                  >
                 </h6>
                 <div class="reactions">
                   <span class="badge bg-transparent">18 comments</span>
@@ -321,14 +307,18 @@
                 </div>
               </li>
               <li class="list-group-item border-light-subtle">
-                <h6><a href="#"class="link-dark-morado">Normalization in Rais 7.1 era</a></h6>
+                <h6>
+                  <a href="#" class="link-dark-morado"
+                    >Normalization in Rais 7.1 era</a
+                  >
+                </h6>
                 <div class="reactions">
                   <span class="badge bg-transparent">1 comment</span>
                 </div>
               </li>
               <li class="list-group-item">
                 <h6>
-                  <a href="#"class="link-dark-morado"
+                  <a href="#" class="link-dark-morado"
                     >How to use React Server Components components on Storybook
                     8</a
                   >
@@ -353,26 +343,40 @@
 
             <ul class="list-group list-group-flush">
               <li class="list-group-item border-light-subtle">
-                <h6><a href="#" class="link-dark-morado">10 Key Data Structures We Wse Every Day</a></h6>
+                <h6>
+                  <a href="#" class="link-dark-morado"
+                    >10 Key Data Structures We Wse Every Day</a
+                  >
+                </h6>
                 <div class="reactions">
                   <span class="badge bg-warning">New</span>
                 </div>
               </li>
               <li class="list-group-item border-light-subtle">
-                <h6><a href="#" class="link-dark-morado">My first DEV community post</a></h6>
+                <h6>
+                  <a href="#" class="link-dark-morado"
+                    >My first DEV community post</a
+                  >
+                </h6>
                 <div class="reactions">
                   <span class="badge bg-warning">New</span>
                 </div>
               </li>
               <li class="list-group-item border-light-subtle">
-                <h6><a href="#" class="link-dark-morado">What was your win this week?</a></h6>
+                <h6>
+                  <a href="#" class="link-dark-morado"
+                    >What was your win this week?</a
+                  >
+                </h6>
                 <div class="reactions">
                   <span class="badge bg-transparent">49comments</span>
                 </div>
               </li>
               <li class="list-group-item border-light-subtle">
                 <h6>
-                  <a href="#" class="link-dark-morado">Web3 and the Democratization of the Internet</a>
+                  <a href="#" class="link-dark-morado"
+                    >Web3 and the Democratization of the Internet</a
+                  >
                 </h6>
                 <div class="reactions">
                   <span class="badge bg-transparent">1 comment</span>
@@ -380,7 +384,9 @@
               </li>
               <li class="list-group-item border-light-subtle">
                 <h6>
-                  <a href="#" class="link-dark-morado">Deep dive Demystifying JSON, BOSN and GSON</a>
+                  <a href="#" class="link-dark-morado"
+                    >Deep dive Demystifying JSON, BOSN and GSON</a
+                  >
                 </h6>
                 <div class="reactions">
                   <span class="badge bg-warning">New</span>
@@ -401,7 +407,8 @@
             <ul class="list-group list-group-flush">
               <li class="list-group-item border-light-subtle">
                 <h6>
-                  <a href="#" class="link-dark-morado"">If Error Messages Were Honest (and Cats)</a>
+                  <a href="#" class="link-dark-morado"">If Error Messages Were
+                  Honest (and Cats)
                 </h6>
                 <div class="reactions">
                   <span class="badge bg-transparent">2 comments</span>
@@ -418,14 +425,18 @@
                 </div>
               </li>
               <li class="list-group-item border-light-subtle">
-                <h6><a href="#" class="link-dark-morado">Working hard or hardly working</a></h6>
+                <h6>
+                  <a href="#" class="link-dark-morado"
+                    >Working hard or hardly working</a
+                  >
+                </h6>
                 <div class="reactions">
                   <span class="badge bg-transparent">1 comment</span>
                 </div>
               </li>
               <li class="list-group-item border-light-subtle">
                 <h6>
-                  <a href="#"class="link-dark-morado"
+                  <a href="#" class="link-dark-morado"
                     >New Privacy Software Promises Unbreakable Security: Can It
                     Protect You from Big Tech?</a
                   >
