@@ -28,7 +28,8 @@ $spacers: map-merge($spacers, (6: $spacer * 4,
   ));
 
 $font-sizes: ("sm":$font-size-base * .75,
-  "m": $font-size-base * .9, );
+  "m": $font-size-base * .9,
+  "reactions": $font-size-base * .95, );
 
 @import "bootstrap/mixins";
 @import "bootstrap/bootstrap.scss";
@@ -111,13 +112,6 @@ $font-sizes: ("sm":$font-size-base * .75,
 
 }
 
-.cajascroll {
-  width: 300px;
-  height: 180px;
-  border: 1px solid gray;
-  overflow: scroll;
-
-}
 
 
 /*.no-border {
