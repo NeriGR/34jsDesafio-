@@ -13,6 +13,7 @@ $theme-colors: map-merge($theme-colors, ("morado": rgba(59, 73, 223),
     "light-grey": $gray-100,
     "ghost": #3d3d3d,
     "border": #495057,
+    "title": $gray-900,
 
   ));
 
@@ -26,6 +27,8 @@ $spacers: map-merge($spacers, (6: $spacer * 4,
 
   ));
 
+$font-sizes: ("sm":$font-size-base * .75,
+  "m": $font-size-base * .9, );
 
 @import "bootstrap/mixins";
 @import "bootstrap/bootstrap.scss";
@@ -50,6 +53,17 @@ $spacers: map-merge($spacers, (6: $spacer * 4,
   text-decoration: none;
 }
 
+.link-title {
+  color: RGBA(var(--bs-title-rgb), var(--bs-link-opacity, 1)) !important;
+  text-decoration: none !important;
+}
+
+
+.link-title:hover,
+.link-title:focus {
+  color: RGBA(38, 46, 142, var(--bs-link-opacity, 1)) !important;
+  text-decoration: none;
+}
 
 
 .btn-ghost-morado {
@@ -94,7 +108,7 @@ $spacers: map-merge($spacers, (6: $spacer * 4,
   --bs-btn-hover-border-color: rgba(10, 13, 39, 0.28);
   text-decoration: none;
   padding: 1;
-  
+
 }
 
 .cajascroll {
