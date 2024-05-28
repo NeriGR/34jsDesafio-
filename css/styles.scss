@@ -11,6 +11,8 @@ $theme-colors: map-merge($theme-colors, ("morado": rgba(59, 73, 223),
     "ghost-morado": rgba(59, 73, 223, 0.1),
     "dark-grey": $gray-700,
     "light-grey": $gray-100,
+    "ghost": #3d3d3d,
+    "border": #495057,
 
   ));
 
@@ -41,18 +43,18 @@ $spacers: map-merge($spacers, (6: $spacer * 4,
   text-decoration: none !important;
 }
 
+
 .link-dark-morado:hover,
 .link-dark-morado:focus {
   color: RGBA(38, 46, 142, var(--bs-link-opacity, 1)) !important;
   text-decoration: none;
 }
 
+
+
 .btn-ghost-morado {
-  --bs-btn-color: $gray-700;
   --bs-btn-bg: transparent;
-  --bs-btn-hover-color: rgba(47, 58, 178);
   --bs-btn-hover-bg: rgba(59, 73, 223, 0.1);
-  --bs-btn-hover-border-color: rgba(10, 13, 39, 0.28);
   --bs-btn-focus-shadow-rgb: 210, 213, 248;
   --bs-btn-active-color: #fff;
   --bs-btn-active-bg: rgba(10, 13, 39, 0.28);
@@ -61,15 +63,39 @@ $spacers: map-merge($spacers, (6: $spacer * 4,
   --bs-btn-disabled-color: #fff;
   --bs-btn-disabled-bg: rgba(59, 73, 223, 0.1);
   --bs-btn-disabled-border-color: rgba(59, 73, 223, 0.1);
-border: 0;
-text-decoration: none;
-
+  color: RGBA(var(--bs-dark-grey-rgb), var(--bs-link-opacity, 1)) !important;
+  border: 0;
+  text-decoration: none;
 }
 
+
 .btn-ghost-morado:hover {
+  color: RGBA(38, 46, 142, var(--bs-link-opacity, 1)) !important;
   text-decoration: underline;
 }
 
+
+.btn-ghost {
+  --bs-btn-color: #3d3d3d;
+  --bs-btn-bg: transparent;
+  --bs-btn-hover-color: #090909;
+  --bs-btn-hover-bg: rgba(0, 0, 0, 0.035);
+  border: 0;
+  text-decoration: none;
+
+}
+
+.btn-border {
+  --bs-btn-color: #3d3d3d;
+  --bs-btn-bg: transparent;
+  --bs-btn-hover-color: #090909;
+  --bs-btn-hover-bg: rgba(0, 0, 0, 0.035);
+  --bs-btn-border-color: transparent;
+  --bs-btn-hover-border-color: rgba(10, 13, 39, 0.28);
+  text-decoration: none;
+  padding: 1;
+  
+}
 
 .cajascroll {
   width: 300px;

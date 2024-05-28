@@ -33,6 +33,7 @@
             >
               <span class="navbar-toggler-icon" height="40"></span>
             </button>
+            <div class="d-none d-md-block col-1"></div>
             <img
               src="https://dev-to-uploads.s3.amazonaws.com/uploads/logos/resized_logo_UQww2soKuUsjaOGNB38o.png"
               alt=""
@@ -41,134 +42,140 @@
             />
 
             <!--sidebar-->
-            <div class="offcanvas offcanvas-start d-md-none"
-            data-bs-scroll="true"
-            data-bs-backdrop="false"
-            id="navbarSupportedContent"
-            tabindex="-1"
-            aria-labelledby="navbarSupportedContentLabel"
-          >
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="navbarSupportedContentLabel">
-                Dev Community
-              </h5>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="offcanvas-body p-0">
-              <div class="navegacion">
-                <nav>
-                  <ul class="nav flex-column">
-                    <li class="nav-item">
-                      <a class="nav-link text-dark" href="#">
-                        <img src="img/home.svg" alt="" /> home</a
-                      >
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link text-dark" href="#">
-                        <img src="img/reading_list.svg" alt="" /> Reading List</a
-                      >
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link text-dark" href="#">
-                        <img src="img/podcasts.svg" alt="" /> Podcasts</a
-                      >
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link text-dark" href="#">
-                        <img src="img/videos.svg" alt="" /> Video</a
-                      >
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link text-dark" href="#">
-                        <img src="img/tags.svg" alt="" /> Tags</a
-                      >
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link text-dark" href="#">
-                        <img src="img/dev_help.svg" alt="" /> DEV Help</a
-                      >
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link text-dark" href="#">
-                        <img src="img/forem_shop.svg" alt="" /> Forem Shop</a
-                      >
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link text-dark" href="#">
-                        <img src="img/advertise.svg" alt="" /> Advertise on DEV</a
-                      >
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link text-dark" href="#">
-                        <img src="img/dev_challenges.svg" alt="" /> DEV Challenges</a
-                      >
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link text-dark" href="#">
-                        <img src="img/dev_showcase.svg" alt="" /> DEV Showcase</a
-                      >
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link text-dark" href="#">
-                        <img src="img/about.svg" alt="" /> About</a
-                      >
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link text-dark" href="#">
-                        <img src="img/contact.svg" alt="" /> Contact</a
-                      >
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link text-dark" href="#">
-                        <img src="img/guides.svg" alt="" /> Guides</a
-                      >
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link text-dark" href="#">
-                        <img src="img/software.svg" alt="" /> Software Comparisons</a
-                      >
-                    </li>
-                  </ul>
-                </nav>
-                <nav class="mt-3">
-                  <p class="m-4 fs-5 fw-bold">Other</p>
-                  <ul class="nav flex-column">
-                    <li class="nav-item">
-                      <a class="nav-link text-dark" href="#">
-                        <img src="img/code.svg" alt="" />Code of Conduct</a
-                      >
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link text-dark" href="#">
-                        <img src="img/privacy.svg" alt="" /> Privacy Policy</a
-                      >
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link text-dark" href="#">
-                        <img src="img/terms.svg" alt="" /> Terms of use</a
-                      >
-                    </li>
-                  </ul>
-                </nav>
-                <div class="d-flex justify-content-around mt-4 ms-2">
-                  <a href=""><img src="img/twiter.svg" alt="" /></a>
-                  <a href=""><img src="img/facebook.svg" alt="" /></a>
-                  <a href=""><img src="img/github.svg" alt="" /></a>
-                  <a href=""><img src="img/insta.svg" alt="" /></a>
-                  <a href=""><img src="img/twitch.svg" alt="" /></a>
-                  <a href=""><img src="img/mastodon.svg" alt="" /></a>
+            <div
+              class="offcanvas offcanvas-start d-md-none"
+              data-bs-scroll="true"
+              data-bs-backdrop="false"
+              id="navbarSupportedContent"
+              tabindex="-1"
+              aria-labelledby="navbarSupportedContentLabel"
+            >
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="navbarSupportedContentLabel">
+                  Dev Community
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="offcanvas-body p-0">
+                <div class="navegacion">
+                  <nav>
+                    <ul class="nav flex-column">
+                      <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">
+                          <img src="img/home.svg" alt="" /> home</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">
+                          <img src="img/reading_list.svg" alt="" /> Reading
+                          List</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">
+                          <img src="img/podcasts.svg" alt="" /> Podcasts</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">
+                          <img src="img/videos.svg" alt="" /> Video</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">
+                          <img src="img/tags.svg" alt="" /> Tags</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">
+                          <img src="img/dev_help.svg" alt="" /> DEV Help</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">
+                          <img src="img/forem_shop.svg" alt="" /> Forem Shop</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">
+                          <img src="img/advertise.svg" alt="" /> Advertise on
+                          DEV</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">
+                          <img src="img/dev_challenges.svg" alt="" /> DEV
+                          Challenges</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">
+                          <img src="img/dev_showcase.svg" alt="" /> DEV
+                          Showcase</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">
+                          <img src="img/about.svg" alt="" /> About</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">
+                          <img src="img/contact.svg" alt="" /> Contact</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">
+                          <img src="img/guides.svg" alt="" /> Guides</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">
+                          <img src="img/software.svg" alt="" /> Software
+                          Comparisons</a
+                        >
+                      </li>
+                    </ul>
+                  </nav>
+                  <nav class="mt-3">
+                    <p class="m-4 fs-5 fw-bold">Other</p>
+                    <ul class="nav flex-column">
+                      <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">
+                          <img src="img/code.svg" alt="" />Code of Conduct</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">
+                          <img src="img/privacy.svg" alt="" /> Privacy Policy</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">
+                          <img src="img/terms.svg" alt="" /> Terms of use</a
+                        >
+                      </li>
+                    </ul>
+                  </nav>
+                  <div class="d-flex justify-content-around mt-4 ms-2">
+                    <a href=""><img src="img/twiter.svg" alt="" /></a>
+                    <a href=""><img src="img/facebook.svg" alt="" /></a>
+                    <a href=""><img src="img/github.svg" alt="" /></a>
+                    <a href=""><img src="img/insta.svg" alt="" /></a>
+                    <a href=""><img src="img/twitch.svg" alt="" /></a>
+                    <a href=""><img src="img/mastodon.svg" alt="" /></a>
+                  </div>
                 </div>
               </div>
             </div>
-            </div>
-<!--sidebar-->
+            <!--sidebar-->
 
-            <div class="border col-7 d-none d-md-block">
+            <div class="border col-7 d-none d-md-block ms-2">
               <button class="btn btn-light bg-transparent">
                 <svg class="" width="24" height="24">
                   <path
@@ -184,7 +191,7 @@
               Powered by Algolia
             </div>
             <div
-              class="ms-auto d-flex justify-content-end align-items-center gap-3"
+              class="ms-auto me-3 d-flex justify-content-end align-items-center gap-3"
             >
               <button class="d-block d-md-none bg-transparent btn btn-light">
                 <svg class="" width="24" height="24">
@@ -193,7 +200,9 @@
                   ></path>
                 </svg>
               </button>
-              <button class="d-none d-md-block btn btn-outline-dark-morado">
+              <button
+                class="d-none d-md-block btn btn-outline-dark-morado text-nowrap"
+              >
                 Create Post
               </button>
               <a class="mx-1" href="">
@@ -217,114 +226,282 @@
       </nav>
     </header>
 
-
-
     <!-- Fin Manuel-->
     <div class="container mt-2">
       <div class="row">
         <!-- Gerardo Cespedes Martinez -->
-        <div class="d-none d-md-block col-md-4 col-lg-2">
-          <nav>
+        <div class="d-none d-md-block col-md-4 col-lg-2 flex-column mt-2 p-0">
+          <nav id="DevCommunity">
             <ul class="nav flex-column">
               <li class="nav-item">
-                <a class="nav-link text-dark" href="#">
-                  <img src="img/home.svg" alt="" /> home</a
+                <a
+                  class="nav btn text-start btn-ghost-morado text-nowrap py-2"
+                  href="#"
+                >
+                  <img src="img/home.svg" alt="" class="me-2 ms-1" />Home</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link text-dark" href="#">
-                  <img src="img/reading_list.svg" alt="" /> Reading List</a
+                <a
+                  class="nav btn text-start btn-ghost-morado text-nowrap py-2"
+                  href="#"
+                >
+                  <img src="img/reading_list.svg" alt="" class="me-2 ms-1" />
+                  Reading List</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link text-dark" href="#">
-                  <img src="img/podcasts.svg" alt="" /> Podcasts</a
+                <a
+                  class="nav btn text-start btn-ghost-morado text-nowrap py-2"
+                  href="#"
+                >
+                  <img src="img/podcasts.svg" alt="" class="me-2 ms-1" />
+                  Podcasts</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link text-dark" href="#">
-                  <img src="img/videos.svg" alt="" /> Video</a
+                <a
+                  class="nav btn text-start btn-ghost-morado text-nowrap py-2"
+                  href="#"
+                >
+                  <img src="img/videos.svg" alt="" class="me-2 ms-1" /> Video</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link text-dark" href="#">
-                  <img src="img/tags.svg" alt="" /> Tags</a
+                <a
+                  class="nav btn text-start btn-ghost-morado text-nowrap py-2"
+                  href="#"
+                >
+                  <img src="img/tags.svg" alt="" class="me-2 ms-1" /> Tags</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link text-dark" href="#">
-                  <img src="img/dev_help.svg" alt="" /> DEV Help</a
+                <a
+                  class="nav btn text-start btn-ghost-morado text-nowrap py-2"
+                  href="#"
+                >
+                  <img src="img/dev_help.svg" alt="" class="me-2 ms-1" /> DEV
+                  Help</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link text-dark" href="#">
-                  <img src="img/forem_shop.svg" alt="" /> Forem Shop</a
+                <a
+                  class="nav btn text-start btn-ghost-morado text-nowrap py-2"
+                  href="#"
+                >
+                  <img src="img/forem_shop.svg" alt="" class="me-2 ms-1" />
+                  Forem Shop</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link text-dark" href="#">
-                  <img src="img/advertise.svg" alt="" /> Advertise on DEV</a
+                <a
+                  class="nav btn text-start btn-ghost-morado flex-nowrap text-nowrap py-2"
+                  href="#"
+                >
+                  <img src="img/advertise.svg" alt="" class="me-2 ms-1" />
+                  Advertise on DEV</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link text-dark" href="#">
-                  <img src="img/dev_challenges.svg" alt="" /> DEV Challenges</a
+                <a
+                  class="nav btn text-start btn-ghost-morado text-nowrap py-2"
+                  href="#"
+                >
+                  <img src="img/dev_challenges.svg" alt="" class="me-2 ms-1" />
+                  DEV Challenges</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link text-dark" href="#">
-                  <img src="img/dev_showcase.svg" alt="" /> DEV Showcase</a
+                <a
+                  class="nav btn text-start btn-ghost-morado text-nowrap py-2"
+                  href="#"
+                >
+                  <img src="img/dev_showcase.svg" alt="" class="me-2 ms-1" />
+                  DEV Showcase</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link text-dark" href="#">
-                  <img src="img/about.svg" alt="" /> About</a
+                <a
+                  class="nav btn text-start btn-ghost-morado text-nowrap py-2"
+                  href="#"
+                >
+                  <img src="img/about.svg" alt="" class="me-2 ms-1" /> About</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link text-dark" href="#">
-                  <img src="img/contact.svg" alt="" /> Contact</a
+                <a
+                  class="nav btn text-start btn-ghost-morado text-nowrap py-2"
+                  href="#"
+                >
+                  <img src="img/contact.svg" alt="" class="me-2 ms-1" />
+                  Contact</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link text-dark" href="#">
-                  <img src="img/guides.svg" alt="" /> Guides</a
+                <a
+                  class="nav btn text-start btn-ghost-morado text-nowrap py-2"
+                  href="#"
+                >
+                  <img src="img/guides.svg" alt="" class="me-2 ms-1" />
+                  Guides</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link text-dark" href="#">
-                  <img src="img/software.svg" alt="" /> Software Comparisons</a
+                <a
+                  class="nav btn text-start btn-ghost-morado flex-nowrap text-nowrap py-2"
+                  href="#"
+                >
+                  <img src="img/software.svg" alt="" class="me-2 ms-1" />
+                  Software Comparisons</a
                 >
               </li>
             </ul>
           </nav>
-          <nav class="mt-3">
-            <p class="m-4 fs-5 fw-bold">Other</p>
+          <nav class="mt-3" id="Other">
+            <h6 class="ms-2 fs-5 fw-bold">Other</h6>
             <ul class="nav flex-column">
               <li class="nav-item">
-                <a class="nav-link text-dark" href="#">
-                  <img src="img/code.svg" alt="" />Code of Conduct</a
+                <a
+                  class="nav btn text-start btn-ghost-morado text-nowrap py-2"
+                  href="#"
+                >
+                  <img src="img/code.svg" alt="" class="me-2 ms-1" />Code of
+                  Conduct</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link text-dark" href="#">
-                  <img src="img/privacy.svg" alt="" /> Privacy Policy</a
+                <a
+                  class="nav btn text-start btn-ghost-morado text-nowrap py-2"
+                  href="#"
+                >
+                  <img src="img/privacy.svg" alt="" class="me-2 ms-1" />Privacy
+                  Policy</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link text-dark" href="#">
-                  <img src="img/terms.svg" alt="" /> Terms of use</a
+                <a
+                  class="nav btn text-start btn-ghost-morado text-nowrap py-2"
+                  href="#"
+                >
+                  <img src="img/terms.svg" alt="" class="me-2 ms-1" />Terms of
+                  use</a
                 >
               </li>
             </ul>
           </nav>
-          <div class="d-flex justify-content-around mt-4 ms-2">
-            <a href=""><img src="img/twiter.svg" alt="" /></a>
-            <a href=""><img src="img/facebook.svg" alt="" /></a>
-            <a href=""><img src="img/github.svg" alt="" /></a>
-            <a href=""><img src="img/insta.svg" alt="" /></a>
-            <a href=""><img src="img/twitch.svg" alt="" /></a>
-            <a href=""><img src="img/mastodon.svg" alt="" /></a>
+          <nav class="d-flex justify-content-around mt-4 mb-4" id="Socials">
+            <a href="" class="btn btn-ghost-morado px-2 py-2"
+              ><img src="img/twiter.svg" alt=""
+            /></a>
+            <a href="" class="btn btn-ghost-morado px-2 py-2"
+              ><img src="img/facebook.svg" alt=""
+            /></a>
+            <a href="" class="btn btn-ghost-morado px-2 py-2"
+              ><img src="img/github.svg" alt=""
+            /></a>
+            <a href="" class="btn btn-ghost-morado px-2 py-2"
+              ><img src="img/insta.svg" alt=""
+            /></a>
+            <a href="" class="btn btn-ghost-morado px-2 py-2"
+              ><img src="img/twitch.svg" alt=""
+            /></a>
+            <a href="" class="btn btn-ghost-morado px-2 py-2"
+              ><img src="img/mastodon.svg" alt=""
+            /></a>
+          </nav>
+          <header class="d-flex align-items-center justify-content-between">
+            <h6>My Tags</h6>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewbox="0 0"
+              width="40"
+              height="40"
+              class="btn btn-ghost-morado p-2"
+            >
+              <path
+                d="M12 1l9.5 5.5v11L12 23l-9.5-5.5v-11L12 1zm0 2.311L4.5 7.653v8.694l7.5 4.342 7.5-4.342V7.653L12 3.311zM12 16a4 4 0 110-8 4 4 0 010 8zm0-2a2 2 0 100-4 2 2 0 000 4z"
+              ></path>
+            </svg>
+          </header>
+          <div class="overflow-y-auto -m-1 p-1 mb-2" style="max-height: 42vh">
+            <a
+              href=""
+              class="nav btn text-start btn-ghost-morado text-nowrap p-2"
+              >#webdev</a
+            ><a
+              href=""
+              class="nav btn text-start btn-ghost-morado text-nowrap p-2"
+              >#javascript</a
+            ><a
+              href=""
+              class="nav btn text-start btn-ghost-morado text-nowrap p-2"
+              >#beginners</a
+            ><a
+              href=""
+              class="nav btn text-start btn-ghost-morado text-nowrap p-2"
+              >#react</a
+            ><a
+              href=""
+              class="nav btn text-start btn-ghost-morado text-nowrap p-2"
+              >#python</a
+            ><a
+              href=""
+              class="nav btn text-start btn-ghost-morado text-nowrap p-2"
+              >#productivity</a
+            ><a
+              href=""
+              class="nav btn text-start btn-ghost-morado text-nowrap p-2"
+              >#devops</a
+            ><a
+              href=""
+              class="nav btn text-start btn-ghost-morado text-nowrap p-2"
+              >#css</a
+            ><a
+              href=""
+              class="nav btn text-start btn-ghost-morado text-nowrap p-2"
+              >#career</a
+            ><a
+              href=""
+              class="nav btn text-start btn-ghost-morado text-nowrap p-2"
+              >#machinelearning</a
+            ><a
+              href=""
+              class="nav btn text-start btn-ghost-morado text-nowrap p-2"
+              >#php</a
+            ><a
+              href=""
+              class="nav btn text-start btn-ghost-morado text-nowrap p-2"
+              >#android</a
+            ><a
+              href="/t/git"
+              title="git tag"
+              class="nav btn text-start btn-ghost-morado text-nowrap p-2"
+              >#git</a
+            ><a
+              href=""
+              class="nav btn text-start btn-ghost-morado text-nowrap p-2"
+              >#codenewbie</a
+            ><a
+              href=""
+              class="nav btn text-start btn-ghost-morado text-nowrap p-2"
+              >#chatgpt</a
+            ><a
+              href=""
+              class="nav btn text-start btn-ghost-morado text-nowrap p-2"
+              >#vscode</a
+            ><a
+              href=""
+              class="nav btn text-start btn-ghost-morado text-nowrap p-2"
+              >#ios</a
+            ><a
+              href=""
+              class="nav btn text-start btn-ghost-morado text-nowrap p-2"
+              >#ubuntu</a
+            ><a
+              href=""
+              class="nav btn text-start btn-ghost-morado text-nowrap p-2"
+              >#bash</a
+            >
           </div>
         </div>
         <!-- Valeria -->
@@ -359,7 +536,10 @@
                   height="32"
                 />
                 <div class="d-flex flex-column justify-content-center">
-                  <a class="text-decoration-none text-dark fw-semibold" href="">
+                  <a
+                    class="btn btn-ghost text-dark fw-semibold text-start"
+                    href=""
+                  >
                     Miguel
                   </a>
                   <p class="fw-light fs-6">May 25 (12 hours ago)</p>
@@ -374,30 +554,13 @@
                   >
                 </h3>
                 <div>
-                  <a
-                    class="pe-2 text-decoration-none text-light-emphasis btn-light bg-transparent"
-                  >
-                    #frontend
-                  </a>
-                  <a
-                    class="p-2 text-decoration-none text-light-emphasis btn-light bg-transparent"
-                  >
-                    #tailwindcss
-                  </a>
-                  <a
-                    class="p-2 text-decoration-none text-light-emphasis btn-light bg-transparent"
-                    >#react</a
-                  >
-                  <a
-                    class="p-2 text-decoration-none text-light-emphasis btn-light bg-transparent"
-                  >
-                    #javascript
-                  </a>
+                  <a class="p-1 btn btn-border"> #frontend </a>
+                  <a class="p-1 btn btn-border"> #tailwindcss </a>
+                  <a class="p-1 btn btn-border">#react</a>
+                  <a class="p-1 btn btn-border"> #javascript </a>
                 </div>
                 <div class="reactions my-4">
-                  <a
-                    class="text-decoration-none text-light-emphasis btn-light bg-transparent"
-                  >
+                  <a class="btn btn-ghost">
                     <span class="bg-dark-subtle rounded-circle border"
                       >&#129299;</span
                     >
@@ -412,11 +575,7 @@
                     >
                     33 reactions
                   </a>
-                  <a
-                    class="p-2 text-decoration-none text-light-emphasis btn-light bg-transparent"
-                  >
-                    4 comments
-                  </a>
+                  <a class="btn btn-ghost"> 4 comments </a>
                 </div>
               </div>
               <div class="commentsection d-flex gap-2">
