@@ -13,6 +13,17 @@ $theme-colors: map-merge($theme-colors, ("morado": rgba(59, 73, 223),
 
   ));
 
+  $spacer: 1rem !default;
+$spacers: map-merge($spacers, (
+    6: $spacer * 4,
+    7: $spacer * 5,
+    8: $spacer * 6,
+    9: $spacer * 7,
+    10: $spacer * 8,
+    11: $spacer * 9,
+
+  ));
+
 
 @import "bootstrap/mixins";
 @import "bootstrap/bootstrap.scss";
@@ -24,6 +35,16 @@ $theme-colors: map-merge($theme-colors, ("morado": rgba(59, 73, 223),
   padding: 0;
   box-sizing: border-box;
 }
+  
+.link-dark-morado {
+  color: RGBA(var(--bs-dark-grey-rgb), var(--bs-link-opacity, 1)) !important;
+  text-decoration:none !important;
+}
+.link-dark-morado:hover, .link-dark-morado:focus {
+  color: RGBA(38, 46, 142, var(--bs-link-opacity, 1)) !important;
+  text-decoration: none;
+}
+
 
 
 /*.no-border {
