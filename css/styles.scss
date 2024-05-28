@@ -48,10 +48,10 @@ $spacers: map-merge($spacers, (6: $spacer * 4,
 }
 
 .btn-ghost-morado {
-  --bs-btn-color: #fff;
-  --bs-btn-bg: rgba(59, 73, 223, 0.1);
-  --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: rgba(14, 17, 51, 0.235);
+  --bs-btn-color: $gray-700;
+  --bs-btn-bg: transparent;
+  --bs-btn-hover-color: rgba(47, 58, 178);
+  --bs-btn-hover-bg: rgba(59, 73, 223, 0.1);
   --bs-btn-hover-border-color: rgba(10, 13, 39, 0.28);
   --bs-btn-focus-shadow-rgb: 210, 213, 248;
   --bs-btn-active-color: #fff;
@@ -61,9 +61,15 @@ $spacers: map-merge($spacers, (6: $spacer * 4,
   --bs-btn-disabled-color: #fff;
   --bs-btn-disabled-bg: rgba(59, 73, 223, 0.1);
   --bs-btn-disabled-border-color: rgba(59, 73, 223, 0.1);
-  border: 0;
+border: 0;
+text-decoration: none;
 
 }
+
+.btn-ghost-morado:hover {
+  text-decoration: underline;
+}
+
 
 .cajascroll {
   width: 300px;
