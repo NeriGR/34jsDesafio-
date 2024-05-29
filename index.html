@@ -20,7 +20,7 @@
   </head>
   <body class="bg-fondo vw-100 justify-content-center">
     <header class="bg-white m-0">
-      <nav class="navbar navbar-expand-lg d-flex">
+      <nav class="navbar navbar-expand-lg d-flex border-bottom">
         <div class="container-fuid w-100">
           <div
             class="d-flex justify-content-start justify-content-md-between ps-2"
@@ -301,8 +301,10 @@
             </div>
             <!--sidebar-->
 
-            <div class="border col-7 d-none d-md-block ms-2">
-              <button class="btn btn-light bg-transparent">
+            <div
+              class="border rounded d-none d-md-block ms-2 w-50 d-flex flex-nowrap align-items-center"
+            >
+              <button class="btn btn-ghost-morado">
                 <svg class="" width="24" height="24">
                   <path
                     d="M18.031 16.617l4.283 4.282-1.415 1.415-4.282-4.283A8.96 8.96 0 0111 20c-4.968 0-9-4.032-9-9s4.032-9 9-9 9 4.032 9 9a8.96 8.96 0 01-1.969 5.617zm-2.006-.742A6.977 6.977 0 0018 11c0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7a6.977 6.977 0 004.875-1.975l.15-.15z"
@@ -310,11 +312,13 @@
                 </svg>
               </button>
               <input
-                class="position-relative no-border w-50 h-100 border-0"
+                class="position-relative no-border w-75 border-0"
                 type="text"
                 placeholder="Search..."
               />
-              Powered by Algolia
+              <span class="ms-auto text-nowrap fs-sm text-light-emphasis">
+                Powered by Algolia</span
+              >
             </div>
             <div
               class="ms-auto me-3 d-flex justify-content-end align-items-center gap-3"
@@ -347,6 +351,7 @@
                 height="30"
               />
             </div>
+            <div class="d-none d-md-block col-1"></div>
           </div>
         </div>
       </nav>

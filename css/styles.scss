@@ -9,7 +9,7 @@ $theme-colors: () !default;
 $theme-colors: map-merge($theme-colors, ("morado": rgba(59, 73, 223),
     "dark-morado": rgba(47, 58, 178),
     "ghost-morado": rgba(59, 73, 223, 0.1),
-    "dark-grey": $gray-700,
+    "dark-grey": $gray-800,
     "light-grey": $gray-100,
     "ghost": #3d3d3d,
     "border": #495057,
