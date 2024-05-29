@@ -15293,6 +15293,10 @@ textarea.form-control-lg {
   --bs-btn-disabled-border-color: rgb(59, 73, 223);
 }
 
+.fecha {
+  margin-top: -5px;
+}
+
 /*.no-border {
         border: none !important;
       }
