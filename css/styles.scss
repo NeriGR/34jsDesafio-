@@ -33,6 +33,11 @@ $font-sizes: ("sm":$font-size-base * .75,
   "reactions": $font-size-base * .95,
   6: $font-size-base * 1.15);
 
+$position-values: ("nerd": 0,
+  "heart": 11%,
+  "cat": 22%,
+  "gift": 33%, );
+
 @import "bootstrap/mixins";
 @import "bootstrap/bootstrap.scss";
 

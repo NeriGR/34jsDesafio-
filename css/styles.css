@@ -8329,52 +8329,68 @@ textarea.form-control-lg {
   position: sticky !important;
 }
 
-.top-0 {
+.top-nerd {
   top: 0 !important;
 }
 
-.top-50 {
-  top: 50% !important;
+.top-heart {
+  top: 11% !important;
 }
 
-.top-100 {
-  top: 100% !important;
+.top-cat {
+  top: 22% !important;
 }
 
-.bottom-0 {
+.top-gift {
+  top: 33% !important;
+}
+
+.bottom-nerd {
   bottom: 0 !important;
 }
 
-.bottom-50 {
-  bottom: 50% !important;
+.bottom-heart {
+  bottom: 11% !important;
 }
 
-.bottom-100 {
-  bottom: 100% !important;
+.bottom-cat {
+  bottom: 22% !important;
 }
 
-.start-0 {
+.bottom-gift {
+  bottom: 33% !important;
+}
+
+.start-nerd {
   left: 0 !important;
 }
 
-.start-50 {
-  left: 50% !important;
+.start-heart {
+  left: 11% !important;
 }
 
-.start-100 {
-  left: 100% !important;
+.start-cat {
+  left: 22% !important;
 }
 
-.end-0 {
+.start-gift {
+  left: 33% !important;
+}
+
+.end-nerd {
   right: 0 !important;
 }
 
-.end-50 {
-  right: 50% !important;
+.end-heart {
+  right: 11% !important;
 }
 
-.end-100 {
-  right: 100% !important;
+.end-cat {
+  right: 22% !important;
+}
+
+.end-gift {
+  right: 33% !important;
 }
 
 .translate-middle {
