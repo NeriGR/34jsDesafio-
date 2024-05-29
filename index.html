@@ -18,7 +18,7 @@
 <<<<<<< HEAD
     <link rel="stylesheet" href="css/styles.css" />
   </head>
-  <body class="bg-light-grey vw-100 justify-content-center">
+  <body class="bg-fondo vw-100 justify-content-center">
     <header class="bg-white m-0">
       <nav class="navbar navbar-expand-lg">
         <div class="container-fuid w-100">
@@ -353,7 +353,7 @@
     </header>
 
     <!-- Fin Manuel-->
-    <div class="container mt-2">
+    <div class="container mt-4">
       <div class="row">
         <!-- Gerardo Cespedes Martinez -->
         <div class="d-none d-md-block col-md-4 col-lg-2 flex-column mt-2 p-0">
@@ -634,15 +634,15 @@
         <div class="col-12 col-md-8 col-lg-7 d-flex flex-column gap-2">
           <ul class="nav nav-underline">
             <li class="nav-item">
-              <a class="btn btn-light fw-bold" aria-current="page" href="#"
+              <a class="btn btn-morado fs-6 fw-bold" aria-current="page" href="#"
                 >Relevant</a
               >
             </li>
             <li class="nav-item">
-              <a class="btn btn-light" href="#">Latest</a>
+              <a class="btn btn-morado  fs-6 fw-bold" href="#">Latest</a>
             </li>
             <li class="nav-item">
-              <a class="btn btn-light" href="#">Top</a>
+              <a class="btn btn-morado  fs-6 fw-bold" href="#">Top</a>
             </li>
           </ul>
 
@@ -668,7 +668,9 @@
                   >
                     Miguel
                   </a>
-                  <p class="fw-light fs-sm mt-0 ms-1 text-light-emphasis">
+                  <p
+                    class="fw-light fs-sm mt-0 ms-1 text-light-emphasis link-dark"
+                  >
                     May 25 (12 hours ago)
                   </p>
                 </div>
@@ -687,7 +689,7 @@
                   <a class="p-1 btn btn-border fs-m">#react</a>
                   <a class="p-1 btn btn-border fs-m"> #javascript </a>
                 </div>
-                <div class="reactions my-4">
+                <div class="reactions my-4 d-flex">
                   <a class="btn btn-ghost fs-reactions">
                     <span class="bg-dark-subtle rounded-circle border"
                       >&#129299;</span
@@ -703,7 +705,13 @@
                     >
                     33 reactions
                   </a>
-                  <a class="btn btn-ghost fs-reactions"> 4 comments </a>
+                  <a class="btn btn-ghost fs-reactions"> 4 comments</a>
+                  <div id="readingtime" class="ms-auto d-flex align-items-center">
+                    <p class="fw-light fs-sm text-light-emphasis mb-0">
+                      5 min read
+                    </p>
+                    <svg class="btn btn-ghost-morado p-2 ms-1" viewbox="0 0" width="40" height="40" xmlns="http://www.w3.org/2000/svg" ><path d="M6.75 4.5h10.5a.75.75 0 01.75.75v14.357a.375.375 0 01-.575.318L12 16.523l-5.426 3.401A.375.375 0 016 19.607V5.25a.75.75 0 01.75-.75zM16.5 6h-9v11.574l4.5-2.82 4.5 2.82V6z"></path></svg>
+                  </div>
                 </div>
               </div>
               <div class="commentsection d-flex gap-2">
@@ -717,7 +725,7 @@
                   />
                 </div>
                 <div
-                  class="comment rounded d-flex flex-column gap-1 p-3 bg-light-grey w-100"
+                  class="comment rounded d-flex flex-column gap-1 p-3 bg-fondo w-100"
                 >
                   <div class="authortime d-flex align-items-center gap-1">
                     <a
