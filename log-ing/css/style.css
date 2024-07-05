@@ -1,0 +1,178 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.form-container {
+  background-color: #ffffff;
+  border-radius: 5px;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+  width: 30%;
+  text-align: center;
+}
+
+.registration__hr-container {
+    position: relative;
+    text-align: center;
+    margin: 2rem 0px;
+}
+
+.registration__hr {
+    height: 1px;
+    margin: 1.5rem 0px;
+    background-color: rgb(180, 180, 180);
+    border: none;
+}
+.registration__hr-label {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 0 1rem;
+    color: gray;
+    text-align: center;
+    font-size: 0.875rem;
+}
+.error-message {
+  background-color: #ffe6e6;
+  color: #ff0000;
+  padding: 10px;
+  border-radius: 5px;
+  display: none;
+  margin-bottom: 20px;
+}
+
+.registration__logo {
+    width: auto;
+    height: 48px;
+}
+ 
+/*Titulo*/
+form h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+/* form p {
+  margin: 5px 0 20px;
+} */
+
+.social-button {
+  /* width: 100%; */
+  display: flex;
+  
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.apple-button {
+  background-color: #fcfcfc;
+  color: #000000;
+  border: 1px solid #ccc;
+}
+.facebook-button {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #ccc;
+}
+.forem-button {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #ccc;
+}
+.github-button {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #ccc;
+}
+.google-button {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #ccc;
+}
+.twitter-button {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #ccc;
+}
+
+.social-button:hover {
+  background-color: #e0e0e0;
+}
+.or-separator {
+  margin: 20px 0;
+  font-size: 11px;
+  color: #000;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.remember-me {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.remember-me label {
+  margin: 0;
+}
+
+.forgot-password {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.login-button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: #007bff;
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.login-button:hover {
+  background-color: #0056b3;
+}
+
+.privacy-policy,
+.create-account {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.privacy-policy a,
+.create-account a {
+  color: #007bff;
+  text-decoration: none;
+}
