@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="form-container">
+        <div id="errorMessage" class="error-message"></div>
+        <form id="loginForm">
+            <a href="../index.html">
+                <img class="registration__logo"
+                    src="https://dev-to-uploads.s3.amazonaws.com/uploads/logos/original_logo_0DliJcfsTcciZen38gX9.png"
+                    alt="DEV Community">
+            </a>
+            <h2>Join the DEV Community</h2>
+            <p>DEV Community is a community of 1,694,543 amazing developers</p>
+
+            <button name="button" type="submit"
+                class="social-button apple-button  flex w-100 p-3 radius-default items-center bg-base-inverted registration__button-container brand-apple">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    role="img" aria-hidden="true" class="crayons-icon crayons-icon--default">
+                    <path
+                        d="M12.38 6.615c.901 0 2.033-.61 2.707-1.423.61-.738 1.056-1.768 1.056-2.798 0-.14-.013-.28-.04-.394-1.004.038-2.21.673-2.936 1.525-.572.65-1.094 1.667-1.094 2.71 0 .152.026.304.038.354.064.013.166.026.267.026h.001ZM9.2 22c1.234 0 1.78-.827 3.319-.827 1.564 0 1.906.802 3.28.802 1.348 0 2.25-1.246 3.102-2.467.954-1.4 1.349-2.772 1.373-2.836-.089-.025-2.67-1.08-2.67-4.042 0-2.569 2.034-3.726 2.149-3.815-1.348-1.933-3.395-1.983-3.954-1.983-1.514 0-2.746.915-3.522.915-.84 0-1.946-.865-3.255-.865C6.529 6.882 4 8.942 4 12.832c0 2.416.94 4.972 2.097 6.625C7.088 20.857 7.954 22 9.2 22Z"
+                        fill="#000"></path>
+                </svg>
+
+                <span class="w-100 flex fw-medium fs-s justify-center items-center self-center color-primary">
+                    Continue with Apple
+                </span>
+            </button>
+             <button name="button" type="submit"
+                class="social-button facebook-button flex w-100 p-3 radius-default items-center bg-base-inverted registration__button-container brand-facebook">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    role="img" aria-hidden="true" class="crayons-icon crayons-icon--default">
+                    <path d="M18.5 2.5a3 3 0 0 1 3 3v13a3 3 0 0 1-3 3h-13a3 3 0 0 1-3-3v-13a3 3 0 0 1 3-3h13Z"
+                        fill="#1877F2"></path>
+                    <path
+                        d="M16.12 12h-2.636v-1.781c0-.754.368-1.485 1.544-1.485h1.2V6.395s-1.087-.184-2.126-.184c-2.167 0-3.586 1.312-3.586 3.693V12H8.105v2.75h2.41v6.75h2.97v-6.757h2.214L16.115 12h.006Z"
+                        fill="#fff"></path>
+                </svg>
+
+                <span class="w-100 flex fw-medium fs-s justify-center items-center self-center color-primary">
+                    Continue with Facebook
+                </span>
+            </button>
+            <button name="button" type="submit"
+            class="social-button forem-button flex w-100 p-3 radius-default items-center bg-base-inverted registration__button-container brand-forem">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" role="img"
+                aria-hidden="true" class="crayons-icon crayons-icon--default">
+                <rect x="2.5" y="2.5" width="19" height="19" rx="3" fill="#022830"></rect>
+                <path
+                    d="M12.326 15.382a.229.229 0 0 1 .27.131 1.804 1.804 0 0 0 2.157 1.096c.887-.254 1.467-1.129 1.316-2.042a.217.217 0 0 1 .169-.248l.745-.2a.232.232 0 0 1 .277.16l.004.015a3.084 3.084 0 0 1-2.186 3.526 2.997 2.997 0 0 1-3.631-1.92.223.223 0 0 1 .142-.289l.015-.004.722-.225Z"
+                    fill="#E9F0E8"></path>
+                <path
+                    d="M10.673 9.915a.229.229 0 0 1-.27-.131 1.804 1.804 0 0 0-2.157-1.096A1.818 1.818 0 0 0 6.93 10.73a.217.217 0 0 1-.168.248l-.745.2a.232.232 0 0 1-.278-.16l-.004-.015a3.084 3.084 0 0 1 2.187-3.526 2.997 2.997 0 0 1 3.63 1.92.223.223 0 0 1-.142.289l-.014.004-.723.225Z"
+                    fill="#4CFCA7"></path>
+                <path
+                    d="m14.936 8.584-.774.208a.232.232 0 0 1-.278-.16l-.317-1.182a.233.233 0 0 1 .16-.278l.79-.211a.232.232 0 0 0 .16-.278l-.2-.744a.223.223 0 0 0-.277-.16l-1.954.54a.233.233 0 0 0-.16.277l.258.963.316 1.181.317 1.182.012.044.88 3.283c.03.117.146.195.263.164l.73-.196a.233.233 0 0 0 .16-.277l-.73-2.729c-.024-.087.019-.161.107-.185l.862-.23a.233.233 0 0 0 .16-.278l-.2-.744c-.039-.146-.168-.221-.285-.19Zm.986-.06a.24.24 0 0 1 .116-.266.871.871 0 0 0 .428-.975.828.828 0 0 0-.839-.62.212.212 0 0 1-.23-.157l-.2-.744c-.03-.117.044-.246.157-.292l.03-.008a2.02 2.02 0 0 1 2.251 1.508 2.058 2.058 0 0 1-1.192 2.446.235.235 0 0 1-.3-.123l-.007-.03-.214-.74Z"
+                    fill="#FBC1F5"></path>
+            </svg>
+
+            <span class="w-100 flex fw-medium fs-s justify-center items-center self-center color-primary">
+                Continue with Forem
+            </span>
+            </button>
+            <button name="button" type="button"
+            class="social-button github-button flex w-100 p-3 radius-default items-center bg-base-inverted registration__button-container brand-github">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" role="img"
+                aria-hidden="true" class="crayons-icon crayons-icon--default">
+                <path
+                    d="M12 2C6.475 2 2 6.475 2 12a9.994 9.994 0 0 0 6.838 9.488c.5.087.687-.213.687-.476 0-.237-.013-1.024-.013-1.862-2.512.463-3.162-.612-3.362-1.175-.113-.288-.6-1.175-1.025-1.413-.35-.187-.85-.65-.013-.662.788-.013 1.35.725 1.538 1.025.9 1.512 2.338 1.087 2.912.825.088-.65.35-1.087.638-1.337-2.225-.25-4.55-1.113-4.55-4.938 0-1.088.387-1.987 1.025-2.688-.1-.25-.45-1.275.1-2.65 0 0 .837-.262 2.75 1.026a9.28 9.28 0 0 1 2.5-.338c.85 0 1.7.112 2.5.337 1.912-1.3 2.75-1.024 2.75-1.024.55 1.375.2 2.4.1 2.65.637.7 1.025 1.587 1.025 2.687 0 3.838-2.337 4.688-4.562 4.938.362.312.675.912.675 1.85 0 1.337-.013 2.412-.013 2.75 0 .262.188.574.688.474A10.016 10.016 0 0 0 22 12c0-5.525-4.475-10-10-10Z"
+                    fill="#171717"></path>
+            </svg>
+            <span class="w-100 flex fw-medium fs-s justify-center items-center self-center color-primary">
+                Continue with GitHub
+            </span>
+            </button>
+            <button name="button" type="submit"
+            class="social-button google-button flex w-100 p-3 radius-default items-center bg-base-inverted registration__button-container brand-google_oauth2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" role="img"
+                aria-hidden="true" class="crayons-icon crayons-icon--default">
+                <path
+                    d="M18.09 18.75c2.115-1.973 3.052-5.25 2.49-8.393h-8.392v3.473h4.777a3.945 3.945 0 0 1-1.777 2.67l2.902 2.25Z"
+                    fill="#4285F4"></path>
+                <path d="M4.215 15.982A9 9 0 0 0 18.09 18.75l-2.902-2.25a5.37 5.37 0 0 1-8.018-2.813l-2.955 2.296Z"
+                    fill="#34A853"></path>
+                <path d="M7.17 13.687c-.375-1.17-.375-2.25 0-3.42L4.215 7.965a9.06 9.06 0 0 0 0 8.025l2.955-2.303Z"
+                    fill="#FBBC02"></path>
+                <path
+                    d="M7.17 10.267c1.035-3.24 5.438-5.115 8.393-2.347l2.58-2.528A8.85 8.85 0 0 0 4.215 7.965l2.955 2.302Z"
+                    fill="#EA4335"></path>
+            </svg>
+
+            <span class="w-100 flex fw-medium fs-s justify-center items-center self-center color-primary">
+                Continue with Google
+            </span>
+            </button>
+            <button name="button" type="submit"
+            class="social-button twitter-button flex w-100 p-3 radius-default items-center bg-base-inverted registration__button-container brand-twitter">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24"
+                viewBox="0 0 24 24" version="1.1" role="img" aria-hidden="true"
+                class="crayons-icon crayons-icon--default">
+                <g id="surface1">
+                    <path style=" stroke:none;fill-rule:evenodd;fill:rgb(0%,0%,0%);fill-opacity:1;"
+                        d="M 12 0 C 18.628906 0 24 5.371094 24 12 C 24 18.628906 18.628906 24 12 24 C 5.371094 24 0 18.628906 0 12 C 0 5.371094 5.371094 0 12 0 Z M 12 0 ">
+                    </path>
+                    <path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;"
+                        d="M 14.9375 7.386719 L 16.5 7.386719 L 13.082031 11.292969 L 17.105469 16.613281 L 13.953125 16.613281 L 11.488281 13.386719 L 8.664062 16.613281 L 7.097656 16.613281 L 10.753906 12.433594 L 6.894531 7.386719 L 10.125 7.386719 L 12.355469 10.335938 Z M 14.386719 15.675781 L 15.253906 15.675781 L 9.652344 8.273438 L 8.722656 8.273438 Z M 14.386719 15.675781 ">
+                    </path>
+                </g>
+            </svg>
+
+            <span class="w-100 flex fw-medium fs-s justify-center items-center self-center color-primary">
+                Continue with Twitter (X)
+            </span>
+            </button>
+
+            <div class="registration__hr-container">
+            <hr class="registration__hr">
+            <div class="registration__hr-label">OR</div>
+            </div>
+            <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email">
+            </div>
+            <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password">
+            </div>
+
+
+            <div class="crayonos-field  flex flex-row items-center justify-between mb-3">
+            <input type="checkbox" id="rememberMe" name="rememberMe">
+            <label for="rememberMe">Remember me</label>
+            <a href="#" class="forgot-password">Forgot password?</a>
+            </div>
+            <button type="submit" class="login-button">Log in</button>
+
+            <p class="privacy-policy">By signing in, you are agreeing to our <a href="#">privacy policy</a>, <a
+                href="#">terms of use</a> and <a href="#">code of conduct</a>.</p>
+            <p class="create-account">New to DEV Community? <a href="../create-a-count/create-a-count.html">Create account.</a></p>
+        </form>
+    </div>
+
+    <script src="asset/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+</html>
