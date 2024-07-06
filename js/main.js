@@ -224,10 +224,42 @@ const convertDateToTimeStamp = (date) => {
   return timestamp;
 };
 
-// // Function to filter posts by a given user
-// const filterPostsByUser = (posts, userName) => {
-//   return posts.filter((post) => post.author === userName);
-// };
+//function to sort by likes
+const sortPostsByLikes = async (getUsersfuntion) => {
+  let posts = await getUsersfuntion();
+  const sortButton = document.getElementById("topButton");
+  sortButton.addEventListener("click", () => {
+    const latestpost = posts.sort((a, b) => {
+      return b.reacciones - a.reacciones;
+    });
+    const cardsContainer = document.querySelector("#allCards");
+    cardsContainer.innerHTML = "";
+    latestpost.forEach((post) => {
+      createCard(post);
+    });
+  });
+}
+sortPostsByLikes(getAllUsers);
+
+
+// // Function to filter post by search input with keyup event
+const filterPostsBySearch = async (getUsersfuntion) => {
+  let posts = await getUsersfuntion();
+  const searchInput = document.getElementById("searchInput");
+  searchInput.addEventListener("keyup", () => {
+    const searchValue = searchInput.value;
+    const filteredPosts = posts.filter((post) =>
+      post.title.toLowerCase().includes(searchValue.toLowerCase())
+    );
+    const cardsContainer = document.querySelector("#allCards");
+    cardsContainer.innerHTML = "";
+    filteredPosts.forEach((post) => {
+      createCard(post);
+    });
+  });
+};
+filterPostsBySearch(getAllUsers);
+
 
 // // JavaScript: Simulate login by saving token to localStorage
 
