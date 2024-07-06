@@ -137,6 +137,26 @@ $position-values: ("nerd": 0,
   --bs-btn-disabled-border-color: rgb(59, 73, 223);
 }
 
+
+.button-login {
+  border: none;
+  width: 100px;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.button-login:hover {
+  background-color:#F3F2F6;
+  color: #67A3FA;
+  text-decoration: underline;
+ }
+
+ .button-create-account:hover {
+  font-weight: bolder;
+  text-decoration: underline;
+ }
+
 .fecha {
   margin-top: -5px;
 }

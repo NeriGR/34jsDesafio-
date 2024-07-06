@@ -3246,7 +3246,7 @@ textarea.form-control-lg {
   z-index: 4;
 }
 
-/* .btn {
+.btn {
   --bs-btn-padding-x: 0.75rem;
   --bs-btn-padding-y: 0.375rem;
   --bs-btn-font-family: ;
@@ -3280,33 +3280,17 @@ textarea.form-control-lg {
   border-radius: var(--bs-btn-border-radius);
   background-color: var(--bs-btn-bg);
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-} */
+}
 @media (prefers-reduced-motion: reduce) {
   .btn {
     transition: none;
   }
 }
-
-.button-login {
-  border: none;
-  width: 100px;
-  height: 100%;
-  padding: 0;
-  margin: 0;
-}
-
-.button-login:hover {
-  background-color:#F3F2F6;
-  color: #67A3FA;
-  text-decoration: underline;
- }
-
-/* .btn:hover {
+.btn:hover {
   color: var(--bs-btn-hover-color);
   background-color: var(--bs-btn-hover-bg);
   border-color: var(--bs-btn-hover-border-color);
-} */
-
+}
 .btn-check + .btn:hover {
   color: var(--bs-btn-color);
   background-color: var(--bs-btn-bg);
@@ -15325,21 +15309,25 @@ textarea.form-control-lg {
   --bs-btn-disabled-border-color: rgb(59, 73, 223);
 }
 
-.fecha {
-  margin-top: -5px;
+.button-login {
+  border: none;
+  width: 100px;
+  height: 100%;
+  padding: 0;
+  margin: 0;
 }
 
-/*.no-border {
-        border: none !important;
-      }
-      .margen-left {
-        margin-left: 39px;
-      }
-      .btn-hover-fill {
-        transition: background-color 0.3s ease, color 0.3s ease;
-      }
+.button-login:hover {
+  background-color: #F3F2F6;
+  color: #67A3FA;
+  text-decoration: underline;
+}
 
-      .btn-hover-fill:hover {
-        background-color: #333; Color de fondo al hacer hover 
-        color: #fff; Color del texto al hacer hover
-      }*//*# sourceMappingURL=styles.css.map */
+.button-create-account:hover {
+  font-weight: bolder;
+  text-decoration: underline;
+}
+
+.fecha {
+  margin-top: -5px;
+}/*# sourceMappingURL=styles.css.map */
