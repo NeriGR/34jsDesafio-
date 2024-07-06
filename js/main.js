@@ -20,7 +20,7 @@ const getAllUsers = async () => {
 const body = document.querySelector("body");
 
 const createCard = (postData) => {
-  let { img, author, comentarios, date, hashtag, reacciones, relevant, title} = postData;
+  let { img, author, comentarios, date, hashtag, reacciones, relevant, title, avatar, timeread} = postData;
     hashtag = hashtag.split(" ");
   // Card container
   const cardsContainer = document.querySelector("#allCards");
@@ -55,7 +55,7 @@ const createCard = (postData) => {
   cardContent.appendChild(firstSection);
   const cardUserImage = document.createElement("img");
   cardUserImage.classList.add("me-2", "rounded-circle");
-  cardUserImage.src = "https://imgs.search.brave.com/ldjDWR16xqPlvTuu_DLjIJsCvp1Vhrb2-fSxBypbAsg/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly93d3cu/dzNzY2hvb2xzLmNv/bS9ob3d0by9pbWdf/YXZhdGFyMi5wbmc";
+  cardUserImage.src = avatar;
   cardUserImage.width = 32;
   cardUserImage.height = 32;
   firstSection.appendChild(cardUserImage);
@@ -161,7 +161,7 @@ const createCard = (postData) => {
 
   const time = document.createElement("p");
   time.classList.add("fw-light", "fs-sm", "text-light-emphasis", "mb-0");
-  time.textContent = `${18} min read`;
+  time.textContent = `${timeread} min read`;
   readingTime.appendChild(time);
 };
 
