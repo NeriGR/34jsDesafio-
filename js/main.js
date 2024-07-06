@@ -194,10 +194,35 @@ const filterPostsByRelevant = async (getUsersfuntion) => {
     relevantPosts.forEach((post) => {
       createCard(post);
     });
-
   });
 };
 filterPostsByRelevant(getAllUsers);
+
+const sortPostsByDate = async (getUsersfuntion) => {
+  let posts = await getUsersfuntion();
+  const sortButton = document.getElementById("latestButton");
+  sortButton.addEventListener("click", () => {
+    //2024-07-03
+    const latestpost = posts.sort((a, b) => {
+      const dateA = convertDateToTimeStamp(a.date);
+      const dateB = convertDateToTimeStamp(b.date);
+      return dateB - dateA;
+    });
+    const cardsContainer = document.querySelector("#allCards");
+    cardsContainer.innerHTML = "";
+    latestpost.forEach((post) => {
+      createCard(post);
+    });
+  });
+}
+sortPostsByDate(getAllUsers);
+
+const convertDateToTimeStamp = (date) => {
+  const [year, month, day] = date.split("-");
+  const dateObject = new Date(`${year}-${month}-${day}T00:00:00Z`);
+  const timestamp = dateObject.getTime();
+  return timestamp;
+};
 
 // // Function to filter posts by a given user
 // const filterPostsByUser = (posts, userName) => {
