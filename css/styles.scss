@@ -143,9 +143,12 @@ $position-values: ("nerd": 0,
   --bs-btn-disabled-bg: rgb(59, 73, 223);
   --bs-btn-disabled-border-color: rgb(59, 73, 223);
 }
-
+.page-inside {
+  margin-bottom: 125px;
+}
 
 .button-login {
+  color: #000;
   border: none;
   width: 100px;
   height: 100%;
@@ -170,6 +173,11 @@ $position-values: ("nerd": 0,
  }
 
 // card lateral
+.barra-lateral {
+  width: 5000px;
+  
+}
+
 
 .card-lateral {
  background-color: #fff;
@@ -200,6 +208,7 @@ $position-values: ("nerd": 0,
   display: inline-block;
 }
 
+
 .btn-create-lateral:hover {
   background-color: #007bff;
   color: #fff;
@@ -210,7 +219,7 @@ $position-values: ("nerd": 0,
 padding-top:20px;
 }
 
-.
+
 .asidi-p {
   font-size: 14px;
   color: #8d8f91;

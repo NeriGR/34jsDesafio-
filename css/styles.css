@@ -15309,7 +15309,12 @@ textarea.form-control-lg {
   --bs-btn-disabled-border-color: rgb(59, 73, 223);
 }
 
+.page-inside {
+  margin-bottom: 125px;
+}
+
 .button-login {
+  color: #000;
   border: none;
   width: 100px;
   height: 100%;
@@ -15331,6 +15336,10 @@ textarea.form-control-lg {
 .negritas {
   font-size: 22px;
   font-weight: bold;
+}
+
+.barra-lateral {
+  width: 5000px;
 }
 
 .card-lateral {
