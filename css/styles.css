@@ -15309,6 +15309,82 @@ textarea.form-control-lg {
   --bs-btn-disabled-border-color: rgb(59, 73, 223);
 }
 
+.page-inside {
+  margin-bottom: 125px;
+}
+
+.button-login {
+  color: #000;
+  border: none;
+  width: 100px;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.button-login:hover {
+  background-color: #F3F2F6;
+  color: #67A3FA;
+  text-decoration: underline;
+}
+
+.button-create-account:hover {
+  font-weight: bolder;
+  text-decoration: underline;
+}
+
+.negritas {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.barra-lateral {
+  width: 5000px;
+}
+
+.card-lateral {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+}
+
+.card-lateral p {
+  margin: 10px 0;
+}
+
+.card-lateral p strong {
+  font-weight: bold;
+}
+
+.btn-create-lateral {
+  background-color: #fff;
+  color: #007bff;
+  border: 2px solid #007bff;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-create-lateral:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.modo-top {
+  padding-top: 20px;
+}
+
+.asidi-p {
+  font-size: 14px;
+  color: #8d8f91;
+}
+
 .fecha {
   margin-top: -5px;
 }/*# sourceMappingURL=styles.css.map */
