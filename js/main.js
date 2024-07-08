@@ -261,18 +261,46 @@ const filterPostsBySearch = async (getUsersfuntion) => {
 filterPostsBySearch(getAllUsers);
 
 
-// // JavaScript: Simulate login by saving token to localStorage
+//Funcion para crear post! 
+const createPost = async (postData) => {
+  const response = await fetch(
+    "https://js-7259a-default-rtdb.firebaseio.com/.json",
+    {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(postData),
+    }
+  );
+  const data = await response.json();
+  return data;
+};
 
-// // Function to simulate login
-// const simulateLogin = () => {
-//   const loginButton = document.getElementById("loginButton"); // Assuming there's a login button with this ID
+//Manejar el envío del formulario:
+document.getElementById('createPostForm').addEventListener('submit', async (e) => {
+  e.preventDefault();
 
-//   loginButton.addEventListener("click", () => {
-//     const token = "abcdefghijk"; // This should be replaced with actual token generation logic
-//     localStorage.setItem("authToken", token); // Saving the token to localStorage
-//     alert("Login correcto"); // Feedback to the user
-//   });
-// };
+  const img = document.getElementById('img').value;
+  const titulo = document.getElementById('titulo').value;
+  const hashtags = document.getElementById('hashtags').value;
+  const contenido = document.getElementById('contenido').value;
+  const fecha = document.getElementById('fecha').value;
 
-// // Call simulateLogin function to attach the event listener to the login button
-// simulateLogin();
+  const postData = {
+    img,
+    title: titulo, 
+    hashtag: hashtags,
+    content: contenido,
+    date: fecha,
+    author: 'Default Author',  
+    avatar: 'default_avatar_url',  
+    reacciones: 0,
+    comentarios: 0,
+    timeread: 0,
+    relevant: 0 
+  };
+
+  await createPost(postData);
+  printPosts(getAllUsers, createCard);
+});
