@@ -7,7 +7,7 @@ const postItem = async (postNew) => {
       headers: { "Content-Type": "application/json;charset=UTF-8" },
       body: JSON.stringify(postNew),
     });
-    window.location.href = `../index.html`;
+    window.location.href = `../homeIndex.html`;
   } catch (error) {
     alert("Error al enviar los datos");
   }
