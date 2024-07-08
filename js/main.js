@@ -214,7 +214,7 @@ const sortPostsByDate = async (getUsersfuntion) => {
       createCard(post);
     });
   });
-}
+};
 sortPostsByDate(getAllUsers);
 
 const convertDateToTimeStamp = (date) => {
@@ -238,9 +238,8 @@ const sortPostsByLikes = async (getUsersfuntion) => {
       createCard(post);
     });
   });
-}
+};
 sortPostsByLikes(getAllUsers);
-
 
 // // Function to filter post by search input with keyup event
 const filterPostsBySearch = async (getUsersfuntion) => {
@@ -260,8 +259,7 @@ const filterPostsBySearch = async (getUsersfuntion) => {
 };
 filterPostsBySearch(getAllUsers);
 
-
-//Funcion para crear post! 
+//Funcion para crear post!
 const createPost = async (postData) => {
   const response = await fetch(
     "https://js-7259a-default-rtdb.firebaseio.com/.json",
@@ -278,29 +276,16 @@ const createPost = async (postData) => {
 };
 
 //Manejar el envío del formulario:
-document.getElementById('createPostForm').addEventListener('submit', async (e) => {
-  e.preventDefault();
 
-  const img = document.getElementById('img').value;
-  const titulo = document.getElementById('titulo').value;
-  const hashtags = document.getElementById('hashtags').value;
-  const contenido = document.getElementById('contenido').value;
-  const fecha = document.getElementById('fecha').value;
-
-  const postData = {
-    img,
-    title: titulo, 
-    hashtag: hashtags,
-    content: contenido,
-    date: fecha,
-    author: 'Default Author',  
-    avatar: 'default_avatar_url',  
-    reacciones: 0,
-    comentarios: 0,
-    timeread: 0,
-    relevant: 0 
-  };
-
-  await createPost(postData);
-  printPosts(getAllUsers, createCard);
-});
+  const formIndex = document.querySelector("#formPostNew");
+  formIndex.addEventListener('submit', (event)=> {
+    event.preventDefault()
+    const inputList = document.querySelectorAll('#createPostForm input[type="text"], textarea,input[type="textdate"],')
+    console.log(inputList)
+    const postData = {}
+    inputList.forEach((input)=> {
+    postData[input.name]= input.value
+    })
+    console.log(postData)
+   /* createPost(postData)*/
+  })
