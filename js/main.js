@@ -112,10 +112,41 @@ const printPost = (postData) => {
     time.textContent = `${postData.timeread} min read`;
     readingTime.appendChild(time);
 
- //Comment section
-    const commentSection = document.createElement('div');
-    commentSection.classList.add('commentsection', 'd-flex', 'gap-2');
-    cardContent.appendChild(commentSection);
+//function to sort by likes
+const sortPostsByLikes = async (getUsersfuntion) => {
+  let posts = await getUsersfuntion();
+  const sortButton = document.getElementById("topButton");
+  sortButton.addEventListener("click", () => {
+    const latestpost = posts.sort((a, b) => {
+      return b.reacciones - a.reacciones;
+    });
+    const cardsContainer = document.querySelector("#allCards");
+    cardsContainer.innerHTML = "";
+    latestpost.forEach((post) => {
+      createCard(post);
+    });
+  });
+}
+sortPostsByLikes(getAllUsers);
+
+
+// // Function to filter post by search input with keyup event
+const filterPostsBySearch = async (getUsersfuntion) => {
+  let posts = await getUsersfuntion();
+  const searchInput = document.getElementById("searchInput");
+  searchInput.addEventListener("keyup", () => {
+    const searchValue = searchInput.value;
+    const filteredPosts = posts.filter((post) =>
+      post.title.toLowerCase().includes(searchValue.toLowerCase())
+    );
+    const cardsContainer = document.querySelector("#allCards");
+    cardsContainer.innerHTML = "";
+    filteredPosts.forEach((post) => {
+      createCard(post);
+    });
+  });
+};
+filterPostsBySearch(getAllUsers);
 
     const avatarComment = document.createElement('div');
     avatarComment.classList.add('avatarcomment', 'd-flex', 'ms-1', 'mt-1');
@@ -165,3 +196,4 @@ async function getAndSortData() {
 }
 
 getAndSortData();
+
