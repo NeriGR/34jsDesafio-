@@ -258,34 +258,3 @@ const filterPostsBySearch = async (getUsersfuntion) => {
   });
 };
 filterPostsBySearch(getAllUsers);
-
-//Funcion para crear post!
-const createPost = async (postData) => {
-  const response = await fetch(
-    "https://js-7259a-default-rtdb.firebaseio.com/.json",
-    {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(postData),
-    }
-  );
-  const data = await response.json();
-  return data;
-};
-
-//Manejar el envío del formulario:
-
-  const formIndex = document.querySelector("#formPostNew");
-  formIndex.addEventListener('submit', (event)=> {
-    event.preventDefault()
-    const inputList = document.querySelectorAll('#createPostForm input[type="text"], textarea,input[type="textdate"],')
-    console.log(inputList)
-    const postData = {}
-    inputList.forEach((input)=> {
-    postData[input.name]= input.value
-    })
-    console.log(postData)
-   /* createPost(postData)*/
-  })
