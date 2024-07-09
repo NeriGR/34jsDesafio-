@@ -214,7 +214,7 @@ const sortPostsByDate = async (getUsersfuntion) => {
       createCard(post);
     });
   });
-}
+};
 sortPostsByDate(getAllUsers);
 
 const convertDateToTimeStamp = (date) => {
@@ -238,9 +238,8 @@ const sortPostsByLikes = async (getUsersfuntion) => {
       createCard(post);
     });
   });
-}
+};
 sortPostsByLikes(getAllUsers);
-
 
 // // Function to filter post by search input with keyup event
 const filterPostsBySearch = async (getUsersfuntion) => {
@@ -259,20 +258,3 @@ const filterPostsBySearch = async (getUsersfuntion) => {
   });
 };
 filterPostsBySearch(getAllUsers);
-
-
-// // JavaScript: Simulate login by saving token to localStorage
-
-// // Function to simulate login
-// const simulateLogin = () => {
-//   const loginButton = document.getElementById("loginButton"); // Assuming there's a login button with this ID
-
-//   loginButton.addEventListener("click", () => {
-//     const token = "abcdefghijk"; // This should be replaced with actual token generation logic
-//     localStorage.setItem("authToken", token); // Saving the token to localStorage
-//     alert("Login correcto"); // Feedback to the user
-//   });
-// };
-
-// // Call simulateLogin function to attach the event listener to the login button
-// simulateLogin();
