@@ -214,7 +214,7 @@ const sortPostsByDate = async (getUsersfuntion) => {
       createCard(post);
     });
   });
-}
+};
 sortPostsByDate(getAllUsers);
 
 const convertDateToTimeStamp = (date) => {
@@ -238,9 +238,8 @@ const sortPostsByLikes = async (getUsersfuntion) => {
       createCard(post);
     });
   });
-}
+};
 sortPostsByLikes(getAllUsers);
-
 
 // // Function to filter post by search input with keyup event
 const filterPostsBySearch = async (getUsersfuntion) => {
@@ -260,19 +259,33 @@ const filterPostsBySearch = async (getUsersfuntion) => {
 };
 filterPostsBySearch(getAllUsers);
 
+//Funcion para crear post!
+const createPost = async (postData) => {
+  const response = await fetch(
+    "https://js-7259a-default-rtdb.firebaseio.com/.json",
+    {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(postData),
+    }
+  );
+  const data = await response.json();
+  return data;
+};
 
-// // JavaScript: Simulate login by saving token to localStorage
+//Manejar el envío del formulario:
 
-// // Function to simulate login
-// const simulateLogin = () => {
-//   const loginButton = document.getElementById("loginButton"); // Assuming there's a login button with this ID
-
-//   loginButton.addEventListener("click", () => {
-//     const token = "abcdefghijk"; // This should be replaced with actual token generation logic
-//     localStorage.setItem("authToken", token); // Saving the token to localStorage
-//     alert("Login correcto"); // Feedback to the user
-//   });
-// };
-
-// // Call simulateLogin function to attach the event listener to the login button
-// simulateLogin();
+  const formIndex = document.querySelector("#formPostNew");
+  formIndex.addEventListener('submit', (event)=> {
+    event.preventDefault()
+    const inputList = document.querySelectorAll('#createPostForm input[type="text"], textarea,input[type="textdate"],')
+    console.log(inputList)
+    const postData = {}
+    inputList.forEach((input)=> {
+    postData[input.name]= input.value
+    })
+    console.log(postData)
+   /* createPost(postData)*/
+  })
