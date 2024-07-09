@@ -1,4 +1,6 @@
-document.addEventListener("DOMContentLoaded", () => {
+const newPost = {}
+
+document.addEventListener("DOMContentLoaded", async () => {
   const postForm = document.getElementById("post-form");
   const savePostBtn = document.getElementById("save-post-btn");
   const successMessage = document.getElementById("success-message");
@@ -22,26 +24,21 @@ document.addEventListener("DOMContentLoaded", () => {
       avatar: "default-avatar-url", // Default avatar URL
       timeread: Math.ceil(postAbout.split(' ').length / 200) // Rough estimate of reading time
     };
-    try {
-      const response = await fetch(
-        "https://js-7259a-default-rtdb.firebaseio.com/.json",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(newPost),
-        }
-      );
-      if (response.ok) {
-        successMessage.classList.remove("d-none");
-        postForm.reset();
-      } else {
-        alert("Error al publicar el post. Inténtalo de nuevo.");
-      }
-    } catch (error) {
-      console.error("Error:", error);
-      alert("Error al publicar el post. Inténtalo de nuevo.");
-    }
+    return await postItem(newPost);
   });
 });
+
+const URL_POST = 'https://js-7259a-default-rtdb.firebaseio.com/.json';
+
+const postItem = async (postNew) => {
+  try{
+      const response = await fetch(URL_POST, {
+          method: 'POST',
+          headers: {  'Content-Type': 'application/json;charset=UTF-8' },
+          body: JSON.stringify(postNew)
+      });
+      window.location.href = `../index.html`;
+  }catch(error){
+      alert('Error al enviar los datos')
+  }
+};
